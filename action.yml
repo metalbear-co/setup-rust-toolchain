@@ -201,7 +201,7 @@ runs:
 
     - name: Setup Rust Caching
       if: inputs.cache == 'true'
-      uses: Swatinem/rust-cache@v2
+      uses: metalbear-co/rust-cache@27b8ea9368cf428f0bfe41b0876b1a7e809d9844
       with:
         workspaces: ${{inputs.cache-workspaces}}
         cache-directories: ${{inputs.cache-directories}}
